@@ -1,0 +1,121 @@
+#myNavbar li a{
+  color:white;
+}
+
+ .tab{
+  margin-top: 180px;
+
+
+
+}
+.graficos{
+  left:200px;
+  margin-left: -250px;
+  padding: 0px
+
+}
+.navbar-custom{
+    height: 12px;
+
+
+}
+
+.navbar li a:hover {
+
+    background-color: #004d1a;
+}
+.navbar-brand{
+  color: white;
+
+
+}
+.navbar{
+    margin:0;
+    background-color: #00ba88;
+    color:white;
+    opacity: 0.8;
+    min-height: 50px;
+    height:50px;
+    border-radius: 0;
+}
+.content{
+    top: 50px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+.rodape{
+    background-color: red;
+    width: 100%;
+    height: 40px;
+}
+
+.side{
+    position: relative;
+    margin-top: -20px;
+    margin-left: 0;
+}
+
+/* .logo{ */
+/*     background-image: url("2.png"); */
+/*     height: 50px; */
+/*     width: 100px; */
+/*     position: absolute; */
+/*     background-repeat: no-repeat; */
+/*     background-size: contain; */
+/* } */
+
+
+.centro{
+    top: -50px;
+    position: relative;
+    left: -20px;
+    height: 200%;
+
+}
+.tab{
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.panelr{
+    margin-top: -40px;
+    margin-right: 0;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0px 1px 1px grey;
+}
+.panell{
+    margin-top: 10px;
+    right: -20px;
+    height: 400px;
+    left: 200px;
+    background-color: white;
+    box-shadow: 0px 1px 1px grey;
+    border: 60px;
+    margin-right: 40px;
+}
+
+
+.rpanel{
+    height:100%;
+    top: 50px;
+    width: 200px;
+    color: white;
+    margin-left: -196px;
+    position: fixed;
+    background-color: #113d31;
+    box-shadow: 1px 1px 1px grey;
+    overflow: true;
+    opacity: 0.8;
+    z-index: 1;
+}
+.corpo{
+    background-color: #f0f3f4;
+
+}
+
+body{
+    overflow-x: hidden;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resolute IT Market Basket</title>
+        {{includeScript("www/alerts.js")}}
+        {{ bootstrapLib()}}
+        {{ headContent() }}
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body class="corpo">
+      <!--    -->
+  <nav class="navbar navbar-fixed-top">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         {{tags$head(
+    tags$style(HTML("/*
+ * Component: Info Box
+                    * -------------------
+                    */
+                    .info-box {
+                    display: block;
+                    min-height: 90px;
+                    background: #fff;
+                    width: 400%;
+
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                    border-radius: 2px;
+                    margin-bottom: 15px;
+                    font-size: 22px;
+                    margin:0;
+                    padding:0;
+
+                    }
+                    .info-box small {
+                    font-size: 22px;
+                    }
+                    .info-box .progress {
+                    background: rgba(0, 0, 0, 0.2);
+                    margin: 5px -10px 5px -10px;
+                    height: 2px;
+                    }
+                    .info-box .progress,
+                    .info-box .progress .progress-bar {
+                    border-radius: 0;
+                    }
+                    .info-box .progress .progress-bar {
+                    background: #fff;
+                    }
+                    .info-box-icon {
+                    border-top-left-radius: 2px;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 2px;
+                    display: block;
+                    float: left;
+                    height: 90px;
+                    width: 90px;
+                    text-align: center;
+                    font-size: 45px;
+                    line-height: 90px;
+                    background: rgba(0, 0, 0, 0.2);
+                    }
+                    .info-box-icon > img {
+                    max-width: 100%;
+                    }
+                    .info-box-content {
+                    padding: 5px 10px;
+                    margin-left: 90px;
+                    }
+                    .info-box-number {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 40px;
+                    }
+                    .progress-description,
+                    .info-box-text {
+                    display: block;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    }
+                    .info-box-text {
+                    text-transform: uppercase;
+                    font-weight:bold;
+                    }
+                    .info-box-more {
+                    display: block;
+                    }
+                    .progress-description {
+                    margin: 0;
+                    }
+
+                    .bg-aqua,
+                    .callout.callout-warning,
+                    .alert-warning,
+                    .label-warning,
+                    .modal-warning .modal-body {
+                      background-color: #00ba88 !important;
+                    }
+
+                    "))
+  )}}
+       </button>
+       <a class="navbar-brand" href="#">Resolute IT</a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+
+       <ul class="nav navbar-nav">
+
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+
+         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
+         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+       </ul>
+     </div>
+   </div>
+ </nav>
+
+<!--
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12 logo">
+                </div>
+                <div class="col-lg-4 navega">
+                    <nav id="barrasup" class="navbar navbar-fixed-top navega navbar-custom">
+                        <ul class="nav navbar-nav navbar-custom">
+                            <li class="active" data-toggle="tab"> <a href="#ini" >Início</a> </li>
+                            <li data-toggle="tab"> <a href="#ini" >Análises e Resultados</a> </li>
+                            <li data-toggle="tab" class="selected"><a href="#ini" >Dados </a> </li>
+                            <li data-toggle="tab"> <a class="dropdown" href="#t">Sobre nós </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="container-fluid tab conteudo">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs" >
+                        <li><a data-toggle = "tab" href="#1">Painel</a></li>
+                        <li><a data-toggle = "tab" href="#2">Tabela</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class=" tab-content clearfix content">
+              <div class="navigation rpanel ">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <h4>Painel</h4>
+                              <hr/>
+                              {{FileInputjrs}}
+                              {{confianca_seletor}}
+                              {{suporte_seletor}}
+                              <button class="btn btn-sucess center">Rodar</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+
+                <div class="tab-pane active" id="1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 caixa">
+                                {{info}}
+                            </div>
+                            <div class="col-lg-4 caixa ">
+                                {{info}}
+                            </div>
+                        </div>
+                      <div class="row graficos">
+                            <div class="col-lg-4 panell">                         
+                                {{ pizza }}
+                            </div>
+                            <div class="col-lg-4 panell ">
+                                {{grafico2}}
+                            </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 tabela">
+                                {{tab2}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{dropdownMenu(type = "tasks", badgeStatus = "success",
+                taskItem(value = 90, color = "green",
+                "Documentation"
+                ),
+                taskItem(value = 17, color = "aqua",
+                "Project X"
+                ),
+                taskItem(value = 75, color = "yellow",
+                "Server deployment"
+                ),
+                taskItem(value = 80, color = "red",
+                "Overall project"
+                )
+                )}}
+
+            </div>
+      <!--  </div>
+        <nav class="navbar navbar-nav navbar-default navbar-fixed-bottom">
+
+        </nav>
+      </div>-->
+
+    </body>
+</html>
